@@ -1,0 +1,9 @@
+FROM dandestac/ml_docker:1.0.1
+RUN apk update && apk upgrade
+RUN apk add --no-cache bash\
+                        python \
+                        pkgconfig \
+                        git \
+                        gcc 
+RUN pip3 install --upgrade pip
+
